@@ -123,10 +123,6 @@ def test_compare_work():
 
 
 def test_compare_span():
-  assert span_calc(10, 2, 2, lambda n: 1) == 4
-  assert span_calc(100, 2, 2, lambda n: 1) == 7
-  assert span_calc(30, 3, 2, lambda n: 1) == 5
-
   def span_fn1(n):
     return span_calc(n, 2, 4, lambda n: pow(n,1))
   def span_fn2(n):

@@ -18,3 +18,8 @@ def test_work():
   assert work_calc(10, 3, 2,lambda n: 1) == 40
   assert work_calc(20, 2, 2, lambda n: n*n) == 748
   assert work_calc(20, 3, 2, lambda n: n) == 230
+
+def test_compare_span():
+  assert span_calc(10, 2, 2, lambda n: 1) == 4
+  assert span_calc(100, 2, 2, lambda n: 1) == 7
+  assert span_calc(30, 3, 2, lambda n: 1) == 5
